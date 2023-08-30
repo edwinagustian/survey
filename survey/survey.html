@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+    <title>Survey-ML</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey pLayer ML</h1>
+            <p id="description" class="description text-center"> Mohon brother untuk meluangkan waktu anda sebetar </p>
+
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nama</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Umur<span class="clue">(Pilihan)</span></label>
+                <input type="number" name="umur" id="number" min="10" max="99" class="form-control"
+                    placeholder="umur" />
+            </div>
+            <div class="form-group">
+                <p>Pilih Role anda</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Pilih peran saat ini</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Assasin">Assasin</option>
+                    <option value="Marksman">Marksman</option>
+                    <option value="Mage">Mage</option>
+                    <option value="Tank">Tank</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Jenis Kelamin</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                        checked />Perempuan</label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Laki-laki</label>
+
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Custome</label>
+            </div>
+
+            <div class="form-group">
+                <p>Rank anda saat ini ?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Pilih</option>
+                    <option value="Immortal">Mytick Immortal</option>
+                    <option value="Glory">Mytik Glory</option>
+                    <option value=" Honor">Mytik Honor</option>
+                    <option value="Romawi">Mytik Romawi</option>
+                    <option value="tidak-satupun">Epic Glory</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    apa yang membuat anda betah bermain ML ?
+                </p>
+
+                <label><input name="prefer" value="Seru" type="checkbox" class="input-checkbox" />Seru</label>
+                <label>
+                    <input name="prefer" value="Toxic" type="checkbox" class="input-checkbox" />Toxic</label>
+                <label><input name="prefer" value="Banyak-temen-mabar" type="checkbox" class="input-checkbox" />Banyak
+                    temen mabar</label>
+                <label><input name="prefer" value="punya-lover" type="checkbox" class="input-checkbox" />Punya
+                    Lover</label>
+                <label><input name="prefer" value="Dapet-duit" type="checkbox" class="input-checkbox" />Dapet
+                    duit</label>
+                <label><input name="prefer" value="Hp-kentang" type="checkbox" class="input-checkbox" />Hp
+                    Kentang</label>
+                <label><input name="prefer" value="Bocil-kematian" type="checkbox" class="input-checkbox" />Bebas dari
+                    Bocil
+                    kematian</label>
+
+            </div>
+
+            <div class="form-group">
+                <p>Berikan komentar atau saran anda</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" onclick="submitForm()" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function submitForm() {
+            alert('Terimkasih telah mengisi form ini')
+        }
+    </script>
+    </div>
+
+</body>
+
+</html>
